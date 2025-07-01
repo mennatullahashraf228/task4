@@ -95,8 +95,9 @@
     <div class="addnc">
         <input id="userImg" type="file" accept="image/*">
         <button id="addc" onclick="newCard()">Add your new card</button>
+        <button id="removec" onclick="deleteCard()">remove</button>
     </div>
-    
+
     <!--stats-->
     <div class="backg">
         <h1>Our Team Stats</h1>
@@ -125,7 +126,7 @@
         <p>Email: info@team.com | Phone: 0123456789</p>
     </div>
 
-    
+
 
     <script>
         function newCard() {
@@ -158,6 +159,14 @@
             </div>
         `;
         }
+
+        function deleteCard() {
+            var x = document.getElementsByClassName("container");
+            var lastCard = x[x.length - 1];
+            lastCard.remove();
+
+        }
+
 
     </script>
 </body>

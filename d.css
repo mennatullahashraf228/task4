@@ -156,11 +156,10 @@ section{
 .addnc{
     display: flex;
     justify-content: center;
+    gap: 20px;
     align-items: center;
     padding: 30px;
     margin: 20px 500px;
-    border-radius: 10px;
-    background-color: rgb(104, 160, 243);
 }
 .c{
     display: flex;
@@ -172,9 +171,20 @@ section{
     padding: 15px;
     border-radius: 20px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #fff;
+    background-color: #30e667;
 }
 #addc:hover{
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+#removec{
+    border: none;
+    padding: 15px;
+    border-radius: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #ef5555;
+}
+#removec:hover{
     transform: scale(1.1);
     transition: 0.4s;
 }
